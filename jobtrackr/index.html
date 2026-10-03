@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Trackr</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
             <a href="#">Applications</a>
         </div>
 
-        <button>+ Add Application</button>
+        <button id="nav-add-btn">+ Add Application</button>
 
     </nav>
 </header>
@@ -73,8 +74,56 @@
             <p>Keep track of your job applications.</p>
         </div>
 
-        <button>+ Add Application</button>
+        <button id="section-add-btn">+ Add Application</button>
     </div>
+
+    <div class="application-form">
+    <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" id="company" placeholder="e.g. TCS">
+    </div>
+
+    <div class="form-group">
+        <label for="role">Role</label>
+        <input type="text" id="role" placeholder="e.g. Frontend Developer">
+    </div>
+
+    <div class="form-group">
+        <label for="applied-date">Applied Date</label>
+        <input type="date" id="applied-date">
+    </div>
+
+    <div class="form-group">
+        <label for="status">Status</label>
+        <select id="status">
+            <option value="Applied">Applied</option>
+            <option value="Interview">Interview</option>
+            <option value="Selected">Selected</option>
+            <option value="Rejected">Rejected</option>
+        </select>
+    </div>
+
+    <button id="add-application-btn">Add Application</button>
+</div>
+
+    <div class="application-controls">
+
+    <input
+        type="text"
+        id="search-input"
+        placeholder="Search company or role..."
+    >
+
+    <select id="filter-status">
+        <option value="All">All Status</option>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Selected">Selected</option>
+        <option value="Rejected">Rejected</option>
+    </select>
+
+</div>
+
 
     <div id="applications-list">
         <p>No applications added yet.</p>

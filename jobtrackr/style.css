@@ -149,3 +149,161 @@ main {
     justify-content: center;
     color: #9ca3af;
 }
+
+.application-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4f46e5;
+}
+
+#add-application-btn {
+    width: fit-content;
+    border: none;
+    background-color: #4f46e5;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#applications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.application-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.2s ease;
+}
+
+.application-card:hover {
+    border-color: #c7d2fe;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.application-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.application-card p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.edit-btn {
+    background-color: #eef2ff;
+    color: #4338ca;
+}
+
+.delete-btn {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    margin-left: 8px;
+}
+
+.edit-btn:hover {
+    background-color: #e0e7ff;
+}
+
+.delete-btn:hover {
+    background-color: #fecaca;
+}
+
+.application-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.application-controls input,
+.application-controls select {
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    background-color: white;
+}
+
+.application-controls input {
+    flex: 1;
+}
+
+.application-controls input:focus,
+.application-controls select:focus {
+    border-color: #4f46e5;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.status-badge.applied {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.status-badge.interview {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.status-badge.selected {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.status-badge.rejected {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
